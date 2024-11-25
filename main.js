@@ -34,32 +34,32 @@ function inital() {
 
 function update() {
 var winrate_display=document.getElementById('winrate_display')
-winrate_display.innerText="Winrate: "+winrate.toFixed(1)+"%"	
+winrate_display.innerText=""+winrate.toFixed(1)+"%"	
 
 var balance_display=document.getElementById('balance_display')
-balance_display.innerText="Balance: "+balance.toFixed(1)+"$";
+balance_display.innerText=""+balance.toFixed(1)+"$";
 
 var score_display=document.getElementById('score_display')
-score_display.innerText="Total Trades: "+score.toFixed(0);
+score_display.innerText=""+score.toFixed(0);
 
 var commision_display=document.getElementById('commision_display')
-commision_display.innerText="Commision: "+sumCommision.toFixed(1)+"$";
+commision_display.innerText=""+sumCommision.toFixed(1)+"$";
 
 var winloss_display=document.getElementById('winloss_display')
-winloss_display.innerText="Win: "+win.toFixed(0)+" Loss: "+loss.toFixed(0);
+winloss_display.innerText="W"+win.toFixed(0)+"L"+loss.toFixed(0);
 
 var pnl_display=document.getElementById('pnl_display')
 pnl = balance-startBalance+sumCommision;
-pnl_display.innerText="PnL: "+pnl.toFixed(1)+"$";
+pnl_display.innerText=""+pnl.toFixed(1)+"$";
 
 var pnl_2_display=document.getElementById('pnl_2_display')
 pnl_2 = balance*100/startBalance-100;
-pnl_2_display.innerText="PnL: "+pnl_2.toFixed(1)+"%";
+pnl_2_display.innerText=""+pnl_2.toFixed(1)+"%";
 
 
 var pf_display=document.getElementById('pf_display');
 
-pf_display.innerText="Profit Faktor: "+profitFaktor.toFixed(1);
+pf_display.innerText=""+profitFaktor.toFixed(1);
 sumWin = 0;
 sumLoss = 0;
 
